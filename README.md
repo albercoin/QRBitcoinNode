@@ -17,5 +17,7 @@ NUM_PORT_HIDDEN_SERVICE --> Number of port hidden service bitcoin, in file /etc/
 
 LABEL                   --> ***OPTIONAL*** Name of label you want to put it
 
+# Example
+$ ./qrbitcoinnode.sh bitcoin_service 8333 Albit_Node
 
 Enjoy it!
