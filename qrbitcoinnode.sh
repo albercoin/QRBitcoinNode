@@ -1,6 +1,6 @@
 #!/bin/bash
 #Dependencies: qrencode
-#Usage: ./qrbitcoinnode.sh NAME_HIDDEN_SERVICE_DIR NUM_PORT_HIDDEN_SERVICE LABEL
+#Usage: ./qrbitcoinnode.sh <NAME_HIDDEN_SERVICE_DIR> <NUM_PORT_HIDDEN_SERVICE> [LABEL]
 
 
 #Check number of parameters
@@ -8,9 +8,9 @@ if [ $# -lt 2 ] || [ $# -gt 3 ];
 then
 	echo "usage: ./qrbitcoinnode.sh <NAME_HIDDEN_SERVICE_DIR> <NUM_PORT_HIDDEN_SERVICE> [<LABEL>] "
 	echo ""
-	echo "<NAME_HIDDEN_SERVICE_DIR> --> /var/lib/tor/<NAME_HIDDEN_SERVICE_DIR>  Name of directory hiiden service bitcoin"
-	echo "<NUM_PORT_HIDDEN_SERVICE> --> /etc/tor/torrc   >>> Number of port hidden service bitcoin"
-	echo "<LABEL>                   --> ***OPTIONAL*** Name of label you want to put it"
+	echo "NAME_HIDDEN_SERVICE_DIR --> Name of directory hiiden service bitcoin >>> /var/lib/tor/<NAME_HIDDEN_SERVICE_DIR>/"
+	echo "NUM_PORT_HIDDEN_SERVICE --> Number of port hidden service bitcoin, in file /etc/tor/torrc"
+	echo "LABEL 		      --> ***OPTIONAL*** Name of label you want to put it"
 	echo ""
 	exit 1
 fi
