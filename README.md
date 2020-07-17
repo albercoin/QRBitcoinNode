@@ -1,5 +1,5 @@
 # QRBitcoinNode
-QR code for connect bitcoin's node from wallet with QR reader
+QR code for connect bitcoin's node from wallet with QR reader, tested with Fully Noded: https://apps.apple.com/us/app/fully-noded/id1436425586
 
 # Usage
 File must be permission of execute: 
